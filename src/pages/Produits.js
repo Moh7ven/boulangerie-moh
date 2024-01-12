@@ -4,9 +4,9 @@ import Navigation from "../components/Navigation";
 const Produits = () => {
   return (
     <div>
-      <h1>Page des produits</h1>
-      <br />
       <Navigation />
+      <br />
+      <h1>Page des produits</h1>
     </div>
   );
 };

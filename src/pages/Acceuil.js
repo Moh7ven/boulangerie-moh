@@ -1,12 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Presentation from "../components/Presentation";
 
 const Acceuil = () => {
   return (
     <div>
-      <h1>Page d'acceuil</h1>
-      <br />
       <Navigation />
+      <Presentation />
     </div>
   );
 };

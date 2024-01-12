@@ -1,0 +1,9 @@
+.presentation {
+  position: relative;
+  overflow: hidden;
+  .welcomeText {
+    color: $primary-color;
+    font-size: 44px;
+    font-weight: 700;
+  }
+}

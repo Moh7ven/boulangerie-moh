@@ -5,12 +5,33 @@
   font-style: normal;
 }
 
+/*Fonts*/
 $font-1: "Poppins", sans-serif;
+/******************/
+
+/*Colors*/
+$primary-color: #4a1d1f;
+$secondary-color: #272727;
+$tertiary-color: #fdf9ed;
+$natural-color: #ffffff;
+/***************/
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: $font-1;
+  background-color: $natural-color;
+  //   color: $primary-color;
 }
 
 h1 {
@@ -21,5 +42,5 @@ h1 {
 a {
   font-family: $font-1;
   text-decoration: none;
-  font-weight: 100;
+  //   font-weight: 100;
 }

@@ -4,9 +4,9 @@ import Navigation from "../components/Navigation";
 const About = () => {
   return (
     <div>
-      <h1>Page d'à propos</h1>
-      <br />
       <Navigation />
+      <br />
+      <h1>Page d'à propos</h1>
     </div>
   );
 };
