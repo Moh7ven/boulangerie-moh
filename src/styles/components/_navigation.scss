@@ -36,6 +36,10 @@
     .nav-active {
       position: relative;
 
+      li {
+        font-weight: bold;
+      }
+
       &::after {
         content: "";
         height: 4px;
