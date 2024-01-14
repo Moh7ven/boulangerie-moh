@@ -6,7 +6,36 @@
     color: $primary-color;
     font-size: 44px;
     font-weight: 700;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-left: 3%;
+    width: 370px;
+
+    .bakeryName {
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 6px;
+        width: 100%;
+        background: $saumon;
+        position: absolute;
+        border-radius: 12px;
+        bottom: 0px;
+        left: 0;
+      }
+    }
+  }
+
+  .accrocheText {
+    font-size: 24px;
+    font-family: $font-1;
+    font-weight: 200;
+    margin-left: 3%;
+    margin-top: 1%;
+  }
+
+  img {
+    height: 424px;
+    width: 590px;
   }
 }

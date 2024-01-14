@@ -13,6 +13,7 @@ $font-1: "Poppins", sans-serif;
 $primary-color: #4a1d1f;
 $secondary-color: #272727;
 $tertiary-color: #fdf9ed;
+$saumon: #ffa903;
 $natural-color: #ffffff;
 /***************/
 
@@ -26,6 +27,7 @@ $natural-color: #ffffff;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  // box-shadow: 1px 1px red inset;
 }
 
 body {

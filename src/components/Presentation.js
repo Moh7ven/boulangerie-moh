@@ -6,13 +6,16 @@ const Presentation = () => {
     <div>
       <BlurredSphere />
       <div className="presentation">
-        <div className="welcomeText">
-          <p>Bienvenue chez</p>
-          <p className="bakeryName">Boulangerie MOH</p>
+        <div className="textContainer">
+          <div className="welcomeText">
+            <p>Bienvenue chez</p>
+            <p className="bakeryName">Boulangerie MOH</p>
+          </div>
+          <p className="accrocheText">
+            Le Goût Authentique de la Boulangerie !
+          </p>
         </div>
-        <span className="accrocheText">
-          Le Goût Authentique de la Boulangerie !
-        </span>
+        <img src="../assets/img/Chocolate-Cake.png" alt=""/>
       </div>
     </div>
   );
