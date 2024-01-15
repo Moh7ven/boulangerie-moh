@@ -3,7 +3,7 @@ import BlurredSphere from "./BlurredSphere";
 
 const Presentation = () => {
   return (
-    <div>
+    <div className="presContainer">
       <BlurredSphere />
       <div className="presentation">
         <div className="textContainer">
@@ -15,7 +15,7 @@ const Presentation = () => {
             Le Goût Authentique de la Boulangerie !
           </p>
         </div>
-        <img src="../assets/img/Chocolate-Cake.png" alt=""/>
+        <img src="./img/Chocolate-Cake.png" alt="" />
       </div>
     </div>
   );

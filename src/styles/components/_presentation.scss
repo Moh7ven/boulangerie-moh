@@ -1,41 +1,49 @@
-.presentation {
-  position: relative;
-  overflow: hidden;
+.presContainer {
+  display: flex;
+  justify-content: center;
+  .presentation {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 
-  .welcomeText {
-    color: $primary-color;
-    font-size: 44px;
-    font-weight: 700;
-    margin-top: 4%;
-    margin-left: 3%;
-    width: 370px;
+    .welcomeText {
+      color: $primary-color;
+      font-size: 44px;
+      font-weight: 700;
+      // margin-top: 4%;
+      // margin-left: 3%;
+      width: 370px;
 
-    .bakeryName {
-      position: relative;
+      .bakeryName {
+        position: relative;
 
-      &::after {
-        content: "";
-        height: 6px;
-        width: 100%;
-        background: $saumon;
-        position: absolute;
-        border-radius: 12px;
-        bottom: 0px;
-        left: 0;
+        &::after {
+          content: "";
+          height: 6px;
+          width: 100%;
+          background: $saumon;
+          position: absolute;
+          border-radius: 12px;
+          bottom: 0px;
+          left: 0;
+        }
       }
     }
-  }
 
-  .accrocheText {
-    font-size: 24px;
-    font-family: $font-1;
-    font-weight: 200;
-    margin-left: 3%;
-    margin-top: 1%;
-  }
+    .accrocheText {
+      font-size: 24px;
+      font-family: $font-1;
+      font-weight: 200;
+      // margin-left: 3%;
+      margin-top: 1%;
+    }
 
-  img {
-    height: 424px;
-    width: 590px;
+    img {
+      height: 424px;
+      width: 590px;
+    }
   }
 }

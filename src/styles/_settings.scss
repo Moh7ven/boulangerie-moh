@@ -23,6 +23,10 @@ $natural-color: #ffffff;
   align-items: center;
 }
 
+@mixin generalWidth {
+  width: 90%;
+}
+
 * {
   padding: 0;
   margin: 0;
