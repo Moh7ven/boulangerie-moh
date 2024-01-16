@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Navigation = () => {
+  const [nav, setNav] = useState(false);
+
   return (
     <div className="navigation">
       <div className="navContainer">
@@ -34,6 +37,9 @@ const Navigation = () => {
             <li>Nous Contacter</li>
           </NavLink>
         </ul>
+        <div className="mobileBtn">
+          <AiOutlineMenu size={26} />
+        </div>
       </div>
     </div>
   );
