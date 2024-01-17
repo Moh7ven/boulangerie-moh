@@ -20,9 +20,9 @@
       letter-spacing: 2.7px;
     }
 
-    ul {
+    .menu {
       display: flex;
-      margin: 10px;
+      // margin: 10px;
       list-style: none;
 
       a {
@@ -75,15 +75,45 @@
     .mobileBtn {
       display: none;
     }
-  }
 
-  @media screen and (max-width: 720px) {
-    .mobileBtn {
-      display: block;
-      position: absolute;
-      cursor: pointer;
-      right: 1rem;
-      z-index: 10;
+    @media screen and (max-width: $medium-screen) {
+      .logo {
+        font-size: 24px;
+      }
+
+      .mobileBtn {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 1rem;
+        z-index: 10;
+      }
+
+      .menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        left: -2%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $natural-color;
+        z-index: 10;
+        transition: left 2s;
+      }
+
+      .active {
+        left: -110%;
+      }
+
+      .navContainer {
+        font-size: 2rem;
+      }
     }
   }
 }

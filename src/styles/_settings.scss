@@ -17,6 +17,12 @@ $saumon: #ffa903;
 $natural-color: #ffffff;
 /***************/
 
+/*Screens*/
+$small-screen: 400px;
+$medium-screen: 768px;
+$large-screen: 890px;
+/***************/
+
 @mixin verticalCenter {
   display: flex;
   justify-content: center;

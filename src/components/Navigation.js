@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { gsap } from "gsap";
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+    tl.staggerTo(
+      ".logo span",
+      0.7,
+      {
+        x: "-40",
+        ease: "power2.inOut",
+      },
+      0.08
+    );
+  }, []);
 
   return (
     <div className="navigation">
@@ -11,7 +26,7 @@ const Navigation = () => {
         <div className="logo">
           <span>Boulangerie MOH</span>
         </div>
-        <ul>
+        <ul className={nav ? ["menu"] : ["menu", "active"].join(" ")}>
           <NavLink
             to="/"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
@@ -37,8 +52,8 @@ const Navigation = () => {
             <li>Nous Contacter</li>
           </NavLink>
         </ul>
-        <div className="mobileBtn">
-          <AiOutlineMenu size={26} />
+        <div onClick={() => setNav(!nav)} className="mobileBtn">
+          {nav ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
         </div>
       </div>
     </div>
