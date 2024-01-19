@@ -2,21 +2,26 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { gsap } from "gsap";
-import { SplitText } from 'split-text';
+import { SplitText } from "gsap-trial/SplitText";
+gsap.registerPlugin(SplitText);
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
 
   useEffect(() => {
-    const split = new SplitText(".logoText");
+    const logoTextElement = document.querySelector(".logoText");
 
-    gsap.to(split.chars, {
-      x: -40,
-      ease: "power2.inOut",
-      yoyo: true,
-      stagger: 0.08,
-      repeat: -1,
-    });
+    if (logoTextElement) {
+      const split = new SplitText(logoTextElement, { type: "chars" });
+
+      gsap.to(split.chars, {
+        x: -40,
+        ease: "power2.inOut",
+        yoyo: true,
+        stagger: 0.08,
+        repeat: -1,
+      });
+    }
   }, []);
 
   return (
