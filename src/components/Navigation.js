@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { gsap } from "gsap";
+/* import { gsap } from "gsap";
 import { SplitText } from "gsap-trial/SplitText";
-gsap.registerPlugin(SplitText);
+gsap.registerPlugin(SplitText); */
 
 const Navigation = () => {
   const [nav, setNav] = useState(false);
 
-  useEffect(() => {
+  /*   useEffect(() => {
     const logoTextElement = document.querySelector(".logoText");
 
     if (logoTextElement) {
@@ -22,7 +22,7 @@ const Navigation = () => {
         repeat: -1,
       });
     }
-  }, []);
+  }, []); */
 
   return (
     <div className="navigation">
