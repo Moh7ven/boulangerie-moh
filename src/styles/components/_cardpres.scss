@@ -1,0 +1,16 @@
+.cardpres {
+  position: relative;
+  margin-top: 6rem;
+
+  .cardcontainer {
+    position: absolute;
+    width: 965px;
+    height: 201px;
+    border-top-left-radius: 100.5px;
+    border-bottom-left-radius: 100.5px;
+    opacity: 0.6;
+    background: $natural-color;
+    backdrop-filter: blur(35.5px);
+    right: 0;
+  }
+}

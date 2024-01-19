@@ -1,0 +1,91 @@
+.textAttract {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+
+  .textAttractContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .pain1 {
+      transform: rotate(85.618deg);
+    }
+
+    .textContainer {
+      p {
+        position: relative;
+        font-weight: 200;
+        color: $secondary-color;
+        text-align: center;
+        font-size: 28px;
+
+        &::after {
+          content: "";
+          height: 6px;
+          width: 100%;
+          background: $saumon;
+          position: absolute;
+          border-radius: 12px;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $large-screen) {
+  .textAttract {
+    .textAttractContainer {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .textContainer {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+  .textAttract {
+    .textAttractContainer {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      .textContainer {
+        p {
+          font-size: 10px;
+
+          &::after {
+            height: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen) {
+  .textAttract {
+    .textAttractContainer {
+      .textContainer {
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
